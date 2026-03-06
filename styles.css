@@ -488,7 +488,140 @@ form .btn {
     border-bottom: none;
 }
 
-/* ===== Footer ===== */
+/* ===== Auth Pages ===== */
+.auth-page {
+    min-height: calc(100vh - 130px);
+    background-color: #F2DDD5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-card-header {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.auth-card-header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: #3d3530;
+    margin-bottom: 0.3rem;
+}
+
+.auth-card-header p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.auth-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #4a4540;
+    margin-top: 0;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.forgot-link {
+    font-size: 0.9rem;
+}
+
+.auth-btn {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+/* ===== Policy Pages ===== */
+.policy-content {
+    max-width: 800px;
+}
+
+.policy-content h2 {
+    font-family: 'DM Serif Display', serif;
+    color: #3d3530;
+    font-size: 1.5rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.policy-content h2:first-child {
+    margin-top: 0;
+}
+
+.policy-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.policy-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* ===== Map Container ===== */
+.map-container {
+    margin-top: 2rem;
+}
+
+/* ===== Pull Quote ===== */
+.pullquote {
+    border-left: 4px solid #F89769;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: #3d3530;
+    background-color: #FDF0EB;
+    border-radius: 0 8px 8px 0;
+}
+
+/* ===== Figure / Figcaption ===== */
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* ===== Footer Nav ===== */
 .footer {
     background-color: #3d3530;
     color: #e8ddd4;
@@ -506,6 +639,24 @@ form .btn {
 
 .footer p {
     margin: 0.3rem 0;
+}
+
+.footer-nav {
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-nav a {
+    color: #F89769;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+.footer-sep {
+    color: #6b5f57;
+    margin: 0 0.4rem;
 }
 
 /* ===== Responsive ===== */

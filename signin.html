@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Sebastjan Bas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">SB</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signin.html" class="active">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </div>
+</nav>
+
+<!-- Auth Page Wrapper -->
+<div class="auth-page">
+    <div class="auth-card">
+
+        <div class="auth-card-header">
+            <h1>Welcome Back</h1>
+            <p>Sign in to your account to continue.</p>
+        </div>
+
+        <form action="#" method="post">
+            <label for="signin-email">Email Address</label>
+            <input type="email" id="signin-email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+            <label for="signin-password">Password</label>
+            <input type="password" id="signin-password" name="password" placeholder="Your password" required autocomplete="current-password">
+
+            <div class="auth-row">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn auth-btn">Sign In</button>
+        </form>
+
+        <p class="auth-switch">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 Sebastjan Bas. All rights reserved.</p>
+    <nav class="footer-nav">
+        <a href="terms.html">Terms and Conditions</a>
+        <span class="footer-sep">|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="footer-sep">|</span>
+        <a href="cookie.html">Cookie Policy</a>
+    </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

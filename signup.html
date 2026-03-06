@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Sebastjan Bas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">SB</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html" class="active">Sign Up</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </div>
+</nav>
+
+<!-- Auth Page Wrapper -->
+<div class="auth-page">
+    <div class="auth-card">
+
+        <div class="auth-card-header">
+            <h1>Create Account</h1>
+            <p>Join and stay up to date with my latest work.</p>
+        </div>
+
+        <form action="#" method="post">
+            <label for="signup-firstname">First Name</label>
+            <input type="text" id="signup-firstname" name="firstname" placeholder="John" required autocomplete="given-name">
+
+            <label for="signup-lastname">Last Name</label>
+            <input type="text" id="signup-lastname" name="lastname" placeholder="Doe" required autocomplete="family-name">
+
+            <label for="signup-email">Email Address</label>
+            <input type="email" id="signup-email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" name="password" placeholder="Minimum 8 characters" required autocomplete="new-password" minlength="8">
+
+            <label for="signup-confirm">Confirm Password</label>
+            <input type="password" id="signup-confirm" name="confirm_password" placeholder="Repeat your password" required autocomplete="new-password">
+
+            <div class="auth-row" style="margin-top: 1rem;">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agree_terms" required>
+                    I agree to the <a href="terms.html">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn auth-btn">Create Account</button>
+        </form>
+
+        <p class="auth-switch">Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 Sebastjan Bas. All rights reserved.</p>
+    <nav class="footer-nav">
+        <a href="terms.html">Terms and Conditions</a>
+        <span class="footer-sep">|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="footer-sep">|</span>
+        <a href="cookie.html">Cookie Policy</a>
+    </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
